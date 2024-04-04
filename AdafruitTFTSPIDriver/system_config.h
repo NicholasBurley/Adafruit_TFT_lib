@@ -72,7 +72,7 @@
     #define READ_FLASH_WORD(addrs) pgm_read_word(addrs)
     
     /* MCU Include File */
-    #include <avr/io.h>
+    #include "avr/io.h"
     
     /* _BV Function */
     //included with avr/io.h
@@ -84,9 +84,9 @@
     #define ENABLE_INTERRUPTS()           sei()
 
     /* Include Files Needed */
-    #include <avr/interrupt.h>
-    #include <util/delay.h>
-    #include <avr/pgmspace.h>
+    #include "avr/interrupt.h"
+    #include "util/delay.h"
+    #include "avr/pgmspace.h"
 #endif
 
 /* Compiler Common */
